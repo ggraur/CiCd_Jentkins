@@ -1,0 +1,35 @@
+{% set class = "md-header" %}
+{% if "navigation.tabs.sticky" in features %}
+  {% set class = class ~ " md-header--shadow md-header--lifted" %}
+{% elif "navigation.tabs" not in features %}
+  {% set class = class ~ " md-header--shadow" %}
+{% endif %}
+
+<header class="{{ class }} cso-header" data-md-component="header">
+  <nav class="md-header__inner md-grid cso-header__inner" aria-label="{{ lang.t('header') }}">
+    <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-header__button cso-header__home" aria-label="{{ config.site_name }}">
+      <span class="cso-header__logo-wrap">
+        <img src="{{ 'assets/cso_logo_312_x_108_96dpi.png' | url }}" alt="Central Statistics Office" class="cso-header__logo">
+      </span>
+      <span class="cso-header__brand">
+        <span class="cso-header__project-name">Jenkins CI/CD Learning</span>
+        <span class="cso-header__description">Internal automation documentation</span>
+      </span>
+    </a>
+    <label class="md-header__button md-icon cso-header__menu" for="__drawer">
+      {% set icon = config.theme.icon.menu or "material/menu" %}
+      {% include ".icons/" ~ icon ~ ".svg" %}
+    </label>
+    <div class="cso-header__spacer"></div>
+    {% if "material/search" in config.plugins %}
+      {% set search = config.plugins["material/search"] | attr("config") %}
+      {% if search.enabled %}
+        <label class="md-header__button md-icon" for="__search">
+          {% set icon = config.theme.icon.search or "material/magnify" %}
+          {% include ".icons/" ~ icon ~ ".svg" %}
+        </label>
+        {% include "partials/search.html" %}
+      {% endif %}
+    {% endif %}
+  </nav>
+</header>

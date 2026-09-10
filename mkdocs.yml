@@ -1,0 +1,63 @@
+site_name: CSO - Jenkins CI/CD Learning
+site_description: Jenkins CI/CD learning documentation for GitHub, Gitea, Angular, .NET, EF Core, and SQL Server.
+site_author: Technology Collect Internal
+copyright: CSO - Central Statistics Office
+
+theme:
+  name: material
+  custom_dir: theme_overrides
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra:
+  version: "0.1.0"
+  generator: false
+
+extra_css:
+    - styles/cso.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+strict: true
+
+nav:
+  - Home: index.md
+  - Decisions:
+      - Open Decisions: 00-decisions/open-decisions.md
+  - Strategy:
+      - Strategy and Infrastructure: 01-strategy/strategy-and-infrastructure.md
+  - Installation:
+      - Ubuntu VM and Jenkins Installation: 02-installation/ubuntu-vm-and-jenkins-installation.md
+  - Source Control:
+      - GitHub and Gitea Integration: 03-github-gitea/github-and-gitea-integration.md
+  - Pipelines:
+      - Angular and .NET Pipelines: 04-pipelines/angular-dotnet-pipelines.md
+      - Jenkins Basic Pipeline Plan: 04-pipelines/jenkins-basic-pipeline-plan.md
+      - Sample Angular App Pipeline Plan: 04-pipelines/sample-angular-app-pipeline-plan.md
+      - Sample .NET API Pipeline Plan: 04-pipelines/sample-dotnet-api-pipeline-plan.md
+      - EF Core and SQL Server Validation Plan: 04-pipelines/efcore-sqlserver-validation-plan.md
+      - Sample Angular, .NET, and SQL Server Pipeline Plan: 04-pipelines/sample-angular-dotnet-sqlserver-pipeline-plan.md
+  - Agents:
+      - Jenkins Build Agents: 05-agents/jenkins-build-agents.md
+  - Security:
+      - Credentials and Hardening: 06-security/credentials-and-hardening.md
+  - Recovery:
+      - Backup and Restore: 07-backup-restore/backup-and-restore.md
+  - Delivery:
+      - External Provider Deployment: 08-deployment/external-provider-deployment.md
+      - Serve the Documentation Site: serve/serve-documentation-site.md
+  - Readiness:
+      - Production Readiness Checklist: 09-production-readiness/production-readiness-checklist.md
