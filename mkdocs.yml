@@ -41,6 +41,8 @@ nav:
       - Strategy and Infrastructure: 01-strategy/strategy-and-infrastructure.md
   - Installation:
       - Ubuntu VM and Jenkins Installation: 02-installation/ubuntu-vm-and-jenkins-installation.md
+      - Popular Jenkins Plugins: 02-installation/popular-jenkins-plugins.md
+      - Jenkins Plugin Installation Checklist: 02-installation/jenkins-plugin-installation-checklist.md
   - Source Control:
       - GitHub and Gitea Integration: 03-github-gitea/github-and-gitea-integration.md
   - Pipelines:

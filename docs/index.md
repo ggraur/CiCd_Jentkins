@@ -9,6 +9,8 @@ The current phase is documentation and planning only. No software is installed u
 0. [Open Decisions](00-decisions/open-decisions.md)
 1. [Strategy and Infrastructure](01-strategy/strategy-and-infrastructure.md)
 2. [Ubuntu VM and Jenkins Installation](02-installation/ubuntu-vm-and-jenkins-installation.md)
+   - [Popular Jenkins Plugins](02-installation/popular-jenkins-plugins.md)
+   - [Jenkins Plugin Installation Checklist](02-installation/jenkins-plugin-installation-checklist.md)
 3. [GitHub and Gitea Integration](03-github-gitea/github-and-gitea-integration.md)
 4. [Angular and .NET Pipelines](04-pipelines/angular-dotnet-pipelines.md)
    - [Jenkins Basic Pipeline Plan](04-pipelines/jenkins-basic-pipeline-plan.md)
@@ -41,6 +43,8 @@ Provider-specific and real-project details remain for a later phase after the ex
 | Open decisions | Complete baseline | 100% | Later provider-specific decisions remain tracked |
 | Strategy and infrastructure | Complete baseline | 100% | Review only if lab constraints change |
 | Installation planning | Complete baseline | 100% | Review before executing commands |
+| Jenkins plugins | Complete baseline | 100% | Install only plugins needed for the current learning step |
+| Plugin installation checklist | Complete baseline | 100% | Use during Jenkins first-time setup |
 | GitHub and Gitea | Complete baseline | 100% | Use the decided lab sequence when Jenkins exists |
 | Pipelines | Complete baseline | 100% | Add final real-project paths after repo layout is known |
 | Agents | Complete baseline | 100% | Revisit Windows agent only if required |

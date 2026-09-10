@@ -35,9 +35,11 @@ Before installing anything, review these documents:
 1. [docs/index.md](docs/index.md)
 2. [docs/00-decisions/open-decisions.md](docs/00-decisions/open-decisions.md)
 3. [docs/02-installation/ubuntu-vm-and-jenkins-installation.md](docs/02-installation/ubuntu-vm-and-jenkins-installation.md)
-4. [docs/03-github-gitea/github-and-gitea-integration.md](docs/03-github-gitea/github-and-gitea-integration.md)
-5. [docs/04-pipelines/jenkins-basic-pipeline-plan.md](docs/04-pipelines/jenkins-basic-pipeline-plan.md)
-6. [DOCS_SITE_MIGRATION_PLAN.md](DOCS_SITE_MIGRATION_PLAN.md)
+4. [docs/02-installation/popular-jenkins-plugins.md](docs/02-installation/popular-jenkins-plugins.md)
+5. [docs/02-installation/jenkins-plugin-installation-checklist.md](docs/02-installation/jenkins-plugin-installation-checklist.md)
+6. [docs/03-github-gitea/github-and-gitea-integration.md](docs/03-github-gitea/github-and-gitea-integration.md)
+7. [docs/04-pipelines/jenkins-basic-pipeline-plan.md](docs/04-pipelines/jenkins-basic-pipeline-plan.md)
+8. [DOCS_SITE_MIGRATION_PLAN.md](DOCS_SITE_MIGRATION_PLAN.md)
 
 ## Documentation Site Migration Step
 
@@ -80,6 +82,7 @@ Before installing anything, review these documents:
 - Open Jenkins from the Windows browser.
 - Complete the first-time Jenkins setup.
 - Install suggested plugins.
+- Compare installed plugins with the plugin installation checklist.
 - Create the administrator user.
 
 ## Implementation Step 4: Add Gitea to the Lab

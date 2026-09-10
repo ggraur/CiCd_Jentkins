@@ -34,6 +34,8 @@ This keeps the learning setup simple, clean, and close to a production-style arc
 | Initial build location | Jenkins controller or same VM | Acceptable for small learning builds |
 | Future build location | Dedicated agents | Better production direction |
 
+Related plugin guidance: [Popular Jenkins Plugins](popular-jenkins-plugins.md).
+
 ## What We Are Not Doing Yet
 
 - Installing Ubuntu.
